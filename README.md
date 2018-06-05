@@ -71,3 +71,12 @@ There are some videos showing the effects of a wrongly trained SVM based on some
 
 Finally, you need to sort out white tiles from your folders because it crashes the script when we run train_svm.py
 
+
+---
+## Training the classifier
+After doing all the previous steps, you can train your SVM by running train_svm.py. Finally, you can run car_finder.py to generate your output videos. Don’t forget to create a folder to store them in it and you can modify its path in the script car_finder.py as well as the video files that you would like to process.
+#### Car_finder.py
+```python
+    video_files = ['myInput.mp4']
+    output_path = "output_videos"
+```
