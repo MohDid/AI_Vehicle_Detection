@@ -10,7 +10,7 @@
 # Vehicle Detection using Linear SVM Classifier
 The Project
 ---
-Here, we are going to explain the steps to install/run the package and the main additions/modifications to the source package listed in credits.
+Here, we are going to explain the steps to install/run the package and the main additions/modifications to the source package listed in credits. The installation of the different packages was not mentioned in the project's source.
 
 
 #### Credits
