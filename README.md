@@ -1,8 +1,8 @@
 [//]: # (Image References)
 
 [image1]: ./examples/videoInput.gif
-[image2]: ./examples/Frames.png
-[image3]: ./examples/Tiles.png
+[image2]: ./examples/Frames.PNG
+[image3]: ./examples/Tiles.PNG
 
 
 
