@@ -68,7 +68,7 @@ Next, you will need to sort your tiles folder and to separate them in two classe
 |-------------|---------|-------|
 |![][image1]| ![][image2] | ![][image3]|
 
-There are some videos showing the effects of a wrongly trained SVM based on some inadequate samples that we put in the dump folder.
+There are some videos showing the effects of a wrongly trained SVM based on some inadequate samples that we put in the dump folder. Check the dataset NewVehicles.rar in the folder /wrong_dataset and the video cars_test3_wrongly_trained.mp4 in the folder /Used_Videos.
 
 Finally, you need to sort out white tiles from your folders because it crashes the script when we run train_svm.py
 
