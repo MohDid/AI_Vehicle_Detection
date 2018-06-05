@@ -35,8 +35,8 @@ Here, we are going to explain the steps to install/run the package and the main 
 #### This installation is done on Windows10 OS.
 ---
 ## How to run the project
-Modifications were needed to use this project. We modified essentially the script car_finder.py and some modifications were made on the script lanefinder.py to not  display the warning icon when the lane was lost.
-The script car_finder.py was debugged because we found some errors on the window parameters for the heatmap. There were some other errors due to incompatibilities of the libraries version which were not indicated in the source project. The project can now be used by downloading it and running car_finder.py.
+Modifications were needed to use this project. We modified essentially the script car_finder.py and some modifications were made on the script lanefinder.py to not display the warning icon when the lane was lost.
+The script car_finder.py was debugged because we found some errors on the window parameters for the heatmap. In car_finder.py, the casting of the Window variables into integers is necessary to avoid type incompatibility error while indexing the Heatmap matrix. There were some other errors due to incompatibilities of the libraries version which were not indicated in the source project. The project can now be used by downloading it and running car_finder.py.
 
 ----
 ## Creating a custom Dataset
