@@ -32,7 +32,7 @@ Here, we are going to explain the steps to install/run the package and the main 
 * Scikit-image 0.13.1 (Python library for image processing)
   - Used for the Histogram of Oriented Gradients
   
-This installation is done on Windows10 OS.
+#### This installation is done on Windows10 OS.
 ---
 ## How to run the project
 Modifications were needed to use this project. We modified essentially the script car_finder.py and some modifications were made on the script lanefinder.py to not  display the warning icon when the lane was lost.
