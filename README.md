@@ -10,7 +10,7 @@ The Project
 Here, we are going to explain the steps to install/run the package and the main additions/modifications to the source package listed in credits.
 
 
-#### **Credits**
+#### Credits
 This project is based on ajsmilutin's modification of the Udacity project https://github.com/ajsmilutin/CarND-Vehicle-Detection
 ---
 
@@ -27,5 +27,5 @@ This project is based on ajsmilutin's modification of the Udacity project https:
 * Matplotlib 2.2.2 (Python library for 2D plotting)
 * Moviepy 0.2.3.4 (Python library for video editing)
 * Scikit-image 0.13.1 (Python library for image processing)
-* Used for the Histogram of Oriented Gradients
+  - Used for the Histogram of Oriented Gradients
 
