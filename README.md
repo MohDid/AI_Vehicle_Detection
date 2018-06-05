@@ -1,6 +1,9 @@
 [//]: # (Image References)
 
-[image1]: ./examples/kitti.png
+[image1]: ./examples/videoInput.gif
+[image2]: ./examples/Frames.png
+[image3]: ./examples/Tiles.png
+
 
 
 
@@ -29,3 +32,7 @@ This project is based on ajsmilutin's modification of the Udacity project https:
 * Scikit-image 0.13.1 (Python library for image processing)
   - Used for the Histogram of Oriented Gradients
 
+## Creating a custom Dataset
+| Video Input | Frames  | Tiles |
+|-------------|---------|-------|
+|![][image1]| ![][image2] | ![][image3]|
