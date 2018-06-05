@@ -31,12 +31,14 @@ Here, we are going to explain the steps to install/run the package and the main 
 * Moviepy 0.2.3.4 (Python library for video editing)
 * Scikit-image 0.13.1 (Python library for image processing)
   - Used for the Histogram of Oriented Gradients
-
+  
+This installation is done on Windows10 OS.
+---
 ## How to run the project
 Modifications were needed to use this project. We modified essentially the script car_finder.py and some modifications were made on the script lanefinder.py to not  display the warning icon when the lane was lost.
 The script car_finder.py was debugged because we found some errors on the window parameters for the heatmap. There were some other errors due to incompatibilities of the libraries version which were not indicated in the source project. The project can now be used by downloading it and running car_finder.py.
 
-
+----
 ## Creating a custom Dataset
 Don't forget to install ffmpeg which is very useful for multimedia processing and also to be able to use the batch file for the tiles
 Follow the instructions in this link : https://fr.wikihow.com/installer-FFmpeg-sur-Windows
@@ -46,7 +48,15 @@ First, you need to install ImageMagick from their website : http://www.imagemagi
 
 You can choose the release depending on your operating system. We used the release ImageMagick-7.0.7-36-Q16-x64-dll.exe.
 
-When magick is installed, you can run the batch file that is going to take your input video (don’t forget to change it with the name of your video). The video will be seperated in frames that will be stored in the folder /frames. Finally, the frames will be cut in 64x64 tiles that will be stored in the folder /tiles.
+When magick is installed, you can run the following script that is going to take your input video (don’t forget to change it with the name of your video). The video will be seperated in frames that will be stored in the folder /frames. Finally, the frames will be cut in 64x64 tiles that will be stored in the folder /tiles.
+```bash
+mkdir frames
+ffmpeg -i input_Video.mp4 -f image2 frames/frame-%03d.png
+mkdir tiles
+for file in frames/*.png; 
+	do magick convert -crop 64x64 +repage $file tiles/`basename $file .png`-tile%02d.png; 
+	done
+```
 
 This step is very important because, you need it for the creation of your own dataset.
 ---
