@@ -10,7 +10,7 @@ The Project
 Here, we are going to explain the steps to install/run the package and the main additions/modifications to the source package listed in credits.
 
 
-**Credits**
+#### **Credits**
 This project is based on ajsmilutin's modification of the Udacity project https://github.com/ajsmilutin/CarND-Vehicle-Detection
 ---
 
