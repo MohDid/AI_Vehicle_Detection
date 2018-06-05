@@ -40,11 +40,16 @@ The script car_finder.py was debugged because we found some errors on the window
 ## Creating a custom Dataset
 Don't forget to install ffmpeg which is very useful for multimedia processing and also to be able to use the batch file for the tiles
 Follow the instructions in this link : https://fr.wikihow.com/installer-FFmpeg-sur-Windows
-The following script is used to create the tiles needed to feed the classifier.__
-First, you need to install ImageMagick from their website : http://www.imagemagick.org/script/download.php. __
-You can choose the release depending on your operating system. We used the release ImageMagick-7.0.7-36-Q16-x64-dll.exe.__
-When magick is installed, you can run the batch file that is going to take your input video (don’t forget to change it with the name of your video). The video will be seperated in frames that will be stored in the folder /frames. Finally, the frames will be cut in 64x64 tiles that will be stored in the folder /tiles.__
-This step is very important because, you need it for the creation of your own dataset.__
+The following script is used to create the tiles needed to feed the classifier.
+
+First, you need to install ImageMagick from their website : http://www.imagemagick.org/script/download.php.
+
+You can choose the release depending on your operating system. We used the release ImageMagick-7.0.7-36-Q16-x64-dll.exe.
+
+When magick is installed, you can run the batch file that is going to take your input video (don’t forget to change it with the name of your video). The video will be seperated in frames that will be stored in the folder /frames. Finally, the frames will be cut in 64x64 tiles that will be stored in the folder /tiles.
+
+This step is very important because, you need it for the creation of your own dataset.
+---
 ### Sorting the tiles
 Next, you will need to sort your tiles folder and to separate them in two classes and store them in two different folders that you can call myNewVehicle and myNewNonVehicle. This step must be done meticulously because it can have a negative impact on the performances of your SVM.
 
@@ -52,6 +57,7 @@ Next, you will need to sort your tiles folder and to separate them in two classe
 |-------------|---------|-------|
 |![][image1]| ![][image2] | ![][image3]|
 
-There are some videos showing the effects of a wrongly trained SVM based on some inadequate samples that we put in the dump folder.__
+There are some videos showing the effects of a wrongly trained SVM based on some inadequate samples that we put in the dump folder.
+
 Finally, you need to sort out white tiles from your folders because it crashes the script when we run train_svm.py
 
