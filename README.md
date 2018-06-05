@@ -54,8 +54,8 @@ mkdir frames
 ffmpeg -i input_Video.mp4 -f image2 frames/frame-%03d.png
 mkdir tiles
 for file in frames/*.png; 
-	do magick convert -crop 64x64 +repage $file tiles/`basename $file .png`-tile%02d.png; 
-	done
+do magick convert -crop 64x64 +repage $file tiles/`basename $file .png`-tile%02d.png; 
+done
 ```
 
 This step is very important because, you need it for the creation of your own dataset.
