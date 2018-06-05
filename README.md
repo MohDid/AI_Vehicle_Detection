@@ -13,7 +13,8 @@ Here, we are going to explain the steps to install/run the package and the main 
 **Credits**
 This project is based on ajsmilutin's modification of the Udacity project https://github.com/ajsmilutin/CarND-Vehicle-Detection
 ---
-##Package installation requirements
+
+## Package installation requirements
 * Python 3.6.5
 * OpenCV 3.4.1
 * Scipy 1.1.0
