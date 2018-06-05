@@ -58,7 +58,8 @@ for file in frames/*.png;
   done
 ```
 
-This step is very important because, you need it for the creation of your own dataset.
+#### This step is very important because, you need it for the creation of your own dataset.
+
 ---
 ### Sorting the tiles
 Next, you will need to sort your tiles folder and to separate them in two classes and store them in two different folders that you can call myNewVehicle and myNewNonVehicle. This step must be done meticulously because it can have a negative impact on the performances of your SVM.
